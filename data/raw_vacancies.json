@@ -1,0 +1,601 @@
+{
+  "items": [
+    {
+      "id": "127361571",
+      "premium": false,
+      "name": "Тестировщик Naimus.AI",
+      "department": null,
+      "has_test": false,
+      "response_letter_required": false,
+      "area": {
+        "id": "1",
+        "name": "Москва",
+        "url": "https://api.hh.ru/areas/1"
+      },
+      "salary": {
+        "from": null,
+        "to": 180000,
+        "currency": "RUR",
+        "gross": false
+      },
+      "salary_range": {
+        "from": null,
+        "to": 180000,
+        "currency": "RUR",
+        "gross": false,
+        "mode": {
+          "id": "MONTH",
+          "name": "За месяц"
+        },
+        "frequency": {
+          "id": "TWICE_PER_MONTH",
+          "name": "Два раза в месяц"
+        }
+      },
+      "type": {
+        "id": "open",
+        "name": "Открытая"
+      },
+      "address": null,
+      "response_url": null,
+      "sort_point_distance": null,
+      "published_at": "2025-11-06T12:22:05+0300",
+      "created_at": "2025-11-06T12:22:05+0300",
+      "archived": false,
+      "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=127361571",
+      "branding": {
+        "type": "MAKEUP",
+        "tariff": null
+      },
+      "show_logo_in_search": true,
+      "show_contacts": true,
+      "insider_interview": null,
+      "url": "https://api.hh.ru/vacancies/127361571?host=hh.ru",
+      "alternate_url": "https://hh.ru/vacancy/127361571",
+      "relations": [],
+      "employer": {
+        "id": "3646686",
+        "name": "АЙФЭЛЛ",
+        "url": "https://api.hh.ru/employers/3646686",
+        "alternate_url": "https://hh.ru/employer/3646686",
+        "logo_urls": {
+          "original": "https://img.hhcdn.ru/employer-logo-original-round/5529619.png",
+          "90": "https://img.hhcdn.ru/employer-logo-round/5529620.png",
+          "240": "https://img.hhcdn.ru/employer-logo-round/5529621.png"
+        },
+        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=3646686",
+        "country_id": 1,
+        "accredited_it_employer": false,
+        "trusted": true
+      },
+      "snippet": {
+        "requirement": "Базовые знания: Разработка и поддержка тест-кейсов, чек-листов, тест-планов. Активное использование техник тест-дизайна для покрытия функциональности. ",
+        "responsibility": "Работа с \"Пограничными случаями\" (Edge Cases) и \"Составлением яда\" (<highlighttext>Data</highlighttext> Poisoning): Целенаправленный поиск и создание входных данных, которые могут сломать..."
+      },
+      "contacts": null,
+      "schedule": {
+        "id": "remote",
+        "name": "Удаленная работа"
+      },
+      "working_days": [],
+      "working_time_intervals": [],
+      "working_time_modes": [],
+      "accept_temporary": false,
+      "fly_in_fly_out_duration": [],
+      "work_format": [
+        {
+          "id": "REMOTE",
+          "name": "Удалённо"
+        }
+      ],
+      "working_hours": [
+        {
+          "id": "HOURS_8",
+          "name": "8 часов"
+        }
+      ],
+      "work_schedule_by_days": [
+        {
+          "id": "FIVE_ON_TWO_OFF",
+          "name": "5/2"
+        }
+      ],
+      "night_shifts": false,
+      "professional_roles": [
+        {
+          "id": "124",
+          "name": "Тестировщик"
+        }
+      ],
+      "accept_incomplete_resumes": false,
+      "experience": {
+        "id": "between1And3",
+        "name": "От 1 года до 3 лет"
+      },
+      "employment": {
+        "id": "full",
+        "name": "Полная занятость"
+      },
+      "employment_form": {
+        "id": "FULL",
+        "name": "Полная"
+      },
+      "internship": false,
+      "adv_response_url": null,
+      "is_adv_vacancy": false,
+      "adv_context": null
+    },
+    {
+      "id": "127317657",
+      "premium": false,
+      "name": "ML-инженер",
+      "department": null,
+      "has_test": false,
+      "response_letter_required": false,
+      "area": {
+        "id": "1",
+        "name": "Москва",
+        "url": "https://api.hh.ru/areas/1"
+      },
+      "salary": null,
+      "salary_range": null,
+      "type": {
+        "id": "open",
+        "name": "Открытая"
+      },
+      "address": null,
+      "response_url": null,
+      "sort_point_distance": null,
+      "published_at": "2025-11-05T15:34:08+0300",
+      "created_at": "2025-11-05T15:34:08+0300",
+      "archived": false,
+      "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=127317657",
+      "show_logo_in_search": null,
+      "show_contacts": false,
+      "insider_interview": null,
+      "url": "https://api.hh.ru/vacancies/127317657?host=hh.ru",
+      "alternate_url": "https://hh.ru/vacancy/127317657",
+      "relations": [],
+      "employer": {
+        "id": "9654910",
+        "name": "Отм Ворлд Вайд",
+        "url": "https://api.hh.ru/employers/9654910",
+        "alternate_url": "https://hh.ru/employer/9654910",
+        "logo_urls": {
+          "original": "https://img.hhcdn.ru/employer-logo-original-round/6871317.png",
+          "90": "https://img.hhcdn.ru/employer-logo-round/6871318.png",
+          "240": "https://img.hhcdn.ru/employer-logo-round/6871319.png"
+        },
+        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=9654910",
+        "country_id": 1,
+        "accredited_it_employer": true,
+        "trusted": true
+      },
+      "snippet": {
+        "requirement": "Опыт решения задач классификации, регрессии, кластеризации. Опыт работы с Time Series <highlighttext>Data</highlighttext>. Понимание метрик эффективности машинного обучения. Опыт продуктовой ML...",
+        "responsibility": "Проектировать и разрабатывать модели машинного обучения. Оптимизировать и улучшать текущие ML-модели. Разрабатывать и внедрять ML решения на базе Python. "
+      },
+      "contacts": null,
+      "schedule": {
+        "id": "fullDay",
+        "name": "Полный день"
+      },
+      "working_days": [],
+      "working_time_intervals": [],
+      "working_time_modes": [],
+      "accept_temporary": false,
+      "fly_in_fly_out_duration": [],
+      "work_format": [],
+      "working_hours": [
+        {
+          "id": "HOURS_8",
+          "name": "8 часов"
+        }
+      ],
+      "work_schedule_by_days": [
+        {
+          "id": "FIVE_ON_TWO_OFF",
+          "name": "5/2"
+        }
+      ],
+      "night_shifts": false,
+      "professional_roles": [
+        {
+          "id": "40",
+          "name": "Другое"
+        }
+      ],
+      "accept_incomplete_resumes": false,
+      "experience": {
+        "id": "between1And3",
+        "name": "От 1 года до 3 лет"
+      },
+      "employment": {
+        "id": "full",
+        "name": "Полная занятость"
+      },
+      "employment_form": {
+        "id": "FULL",
+        "name": "Полная"
+      },
+      "internship": false,
+      "adv_response_url": null,
+      "is_adv_vacancy": false,
+      "adv_context": null
+    },
+    {
+      "id": "127362567",
+      "premium": false,
+      "name": "Senior Frontend Developer / Старший фронтэнд разработчик",
+      "department": null,
+      "has_test": false,
+      "response_letter_required": false,
+      "area": {
+        "id": "1",
+        "name": "Москва",
+        "url": "https://api.hh.ru/areas/1"
+      },
+      "salary": {
+        "from": 5000,
+        "to": 10000,
+        "currency": "USD",
+        "gross": true
+      },
+      "salary_range": {
+        "from": 5000,
+        "to": 10000,
+        "currency": "USD",
+        "gross": true,
+        "mode": {
+          "id": "MONTH",
+          "name": "За месяц"
+        },
+        "frequency": null
+      },
+      "type": {
+        "id": "open",
+        "name": "Открытая"
+      },
+      "address": {
+        "city": "Нью-Йорк",
+        "street": null,
+        "building": null,
+        "lat": 40.71463,
+        "lng": -74.00286,
+        "description": null,
+        "raw": "Нью-Йорк",
+        "metro": null,
+        "metro_stations": [],
+        "id": "19905074"
+      },
+      "response_url": null,
+      "sort_point_distance": null,
+      "published_at": "2025-11-06T12:38:53+0300",
+      "created_at": "2025-11-06T12:38:53+0300",
+      "archived": false,
+      "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=127362567",
+      "show_logo_in_search": null,
+      "show_contacts": true,
+      "insider_interview": null,
+      "url": "https://api.hh.ru/vacancies/127362567?host=hh.ru",
+      "alternate_url": "https://hh.ru/vacancy/127362567",
+      "relations": [],
+      "employer": {
+        "id": "9091068",
+        "name": "Podscribe",
+        "url": "https://api.hh.ru/employers/9091068",
+        "alternate_url": "https://hh.ru/employer/9091068",
+        "logo_urls": {
+          "original": "https://img.hhcdn.ru/employer-logo-original-round/5595763.jpeg",
+          "90": "https://img.hhcdn.ru/employer-logo-round/5595764.jpeg",
+          "240": "https://img.hhcdn.ru/employer-logo-round/5595765.jpeg"
+        },
+        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=9091068",
+        "country_id": 1,
+        "accredited_it_employer": false,
+        "trusted": true
+      },
+      "snippet": {
+        "requirement": "5+ years of React and Typescript experience. Experience with HTML5 and CSS3. Python, Node, SQL (bonus). ",
+        "responsibility": "We at Podscribe measure advertisers’ campaign performance everywhere from podcasts and videos to social media platforms. We’re involved in..."
+      },
+      "contacts": null,
+      "schedule": {
+        "id": "remote",
+        "name": "Удаленная работа"
+      },
+      "working_days": [],
+      "working_time_intervals": [],
+      "working_time_modes": [],
+      "accept_temporary": false,
+      "fly_in_fly_out_duration": [],
+      "work_format": [
+        {
+          "id": "REMOTE",
+          "name": "Удалённо"
+        }
+      ],
+      "working_hours": [
+        {
+          "id": "HOURS_8",
+          "name": "8 часов"
+        }
+      ],
+      "work_schedule_by_days": [
+        {
+          "id": "FIVE_ON_TWO_OFF",
+          "name": "5/2"
+        }
+      ],
+      "night_shifts": false,
+      "professional_roles": [
+        {
+          "id": "96",
+          "name": "Программист, разработчик"
+        }
+      ],
+      "accept_incomplete_resumes": false,
+      "experience": {
+        "id": "between3And6",
+        "name": "От 3 до 6 лет"
+      },
+      "employment": {
+        "id": "full",
+        "name": "Полная занятость"
+      },
+      "employment_form": {
+        "id": "FULL",
+        "name": "Полная"
+      },
+      "internship": false,
+      "adv_response_url": null,
+      "is_adv_vacancy": false,
+      "adv_context": null
+    },
+    {
+      "id": "127311791",
+      "premium": false,
+      "name": "QA-инженер",
+      "department": null,
+      "has_test": false,
+      "response_letter_required": true,
+      "area": {
+        "id": "1",
+        "name": "Москва",
+        "url": "https://api.hh.ru/areas/1"
+      },
+      "salary": null,
+      "salary_range": null,
+      "type": {
+        "id": "open",
+        "name": "Открытая"
+      },
+      "address": {
+        "city": "Москва",
+        "street": "Шарикоподшипниковская улица",
+        "building": "38",
+        "lat": 55.714805,
+        "lng": 37.677337,
+        "description": null,
+        "raw": "Москва, Шарикоподшипниковская улица, 38",
+        "metro": null,
+        "metro_stations": [],
+        "id": "16103672"
+      },
+      "response_url": null,
+      "sort_point_distance": null,
+      "published_at": "2025-11-05T14:21:23+0300",
+      "created_at": "2025-11-05T14:21:23+0300",
+      "archived": false,
+      "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=127311791",
+      "show_logo_in_search": null,
+      "show_contacts": false,
+      "insider_interview": null,
+      "url": "https://api.hh.ru/vacancies/127311791?host=hh.ru",
+      "alternate_url": "https://hh.ru/vacancy/127311791",
+      "relations": [],
+      "employer": {
+        "id": "11241270",
+        "name": "Utrace",
+        "url": "https://api.hh.ru/employers/11241270",
+        "alternate_url": "https://hh.ru/employer/11241270",
+        "logo_urls": {
+          "original": "https://img.hhcdn.ru/employer-logo-original-round/6851997.png",
+          "90": "https://img.hhcdn.ru/employer-logo-round/6851998.png",
+          "240": "https://img.hhcdn.ru/employer-logo-round/6851999.png"
+        },
+        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=11241270",
+        "country_id": 1,
+        "accredited_it_employer": true,
+        "trusted": true
+      },
+      "snippet": {
+        "requirement": "Java 21, Spring 5, SpringBoot 2, Spring JPA, Hibernate, PostgreSQL. — умение работать с задачами и KANBAN-досками. — умение работать с...",
+        "responsibility": "Клиент-серверное приложение. — умение работать с требованиями - анализировать постановки, взаимодействовать с аналитиками, разрабатывать чек-листы и тест-кейсы по требованиями. — "
+      },
+      "contacts": null,
+      "schedule": {
+        "id": "remote",
+        "name": "Удаленная работа"
+      },
+      "working_days": [],
+      "working_time_intervals": [],
+      "working_time_modes": [],
+      "accept_temporary": false,
+      "fly_in_fly_out_duration": [],
+      "work_format": [
+        {
+          "id": "REMOTE",
+          "name": "Удалённо"
+        }
+      ],
+      "working_hours": [
+        {
+          "id": "HOURS_8",
+          "name": "8 часов"
+        }
+      ],
+      "work_schedule_by_days": [
+        {
+          "id": "FIVE_ON_TWO_OFF",
+          "name": "5/2"
+        }
+      ],
+      "night_shifts": false,
+      "professional_roles": [
+        {
+          "id": "124",
+          "name": "Тестировщик"
+        }
+      ],
+      "accept_incomplete_resumes": false,
+      "experience": {
+        "id": "moreThan6",
+        "name": "Более 6 лет"
+      },
+      "employment": {
+        "id": "full",
+        "name": "Полная занятость"
+      },
+      "employment_form": {
+        "id": "FULL",
+        "name": "Полная"
+      },
+      "internship": false,
+      "adv_response_url": null,
+      "is_adv_vacancy": false,
+      "adv_context": null
+    },
+    {
+      "id": "127358553",
+      "premium": false,
+      "name": "Senior Product Owner for MENA",
+      "department": null,
+      "has_test": false,
+      "response_letter_required": false,
+      "area": {
+        "id": "1",
+        "name": "Москва",
+        "url": "https://api.hh.ru/areas/1"
+      },
+      "salary": null,
+      "salary_range": null,
+      "type": {
+        "id": "open",
+        "name": "Открытая"
+      },
+      "address": {
+        "city": "Сектор 3",
+        "street": "Трейд-Сентер-Секонд, Трейд Сентер Секонд",
+        "building": "One Central",
+        "lat": 25.220717,
+        "lng": 55.285143,
+        "description": null,
+        "raw": "Сектор 3, Трейд-Сентер-Секонд, Трейд Сентер Секонд, One Central",
+        "metro": null,
+        "metro_stations": [],
+        "id": "20380229"
+      },
+      "response_url": null,
+      "sort_point_distance": null,
+      "published_at": "2025-11-06T11:36:48+0300",
+      "created_at": "2025-11-06T11:36:48+0300",
+      "archived": false,
+      "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=127358553",
+      "branding": {
+        "type": "MAKEUP",
+        "tariff": null
+      },
+      "show_logo_in_search": true,
+      "show_contacts": false,
+      "insider_interview": null,
+      "url": "https://api.hh.ru/vacancies/127358553?host=hh.ru",
+      "alternate_url": "https://hh.ru/vacancy/127358553",
+      "relations": [],
+      "employer": {
+        "id": "4488077",
+        "name": "LIFE PAY",
+        "url": "https://api.hh.ru/employers/4488077",
+        "alternate_url": "https://hh.ru/employer/4488077",
+        "logo_urls": {
+          "original": "https://img.hhcdn.ru/employer-logo-original-round/6842505.png",
+          "90": "https://img.hhcdn.ru/employer-logo-round/6842506.png",
+          "240": "https://img.hhcdn.ru/employer-logo-round/6842507.png"
+        },
+        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=4488077",
+        "country_id": 1,
+        "accredited_it_employer": true,
+        "trusted": true
+      },
+      "snippet": {
+        "requirement": "Analytical and <highlighttext>data</highlighttext>-driven; comfortable managing product P&L and forecasting ROI. Skilled at collaborating with <highlighttext>Engineering</highlighttext> and <highlighttext>Data</highlighttext> teams...",
+        "responsibility": "Partner with PMMs to ensure GTM alignment and measurable adoption. Monitor performance metrics, SLAs, and feature profitability. Collaborate with <highlighttext>data</highlighttext>..."
+      },
+      "contacts": null,
+      "schedule": {
+        "id": "fullDay",
+        "name": "Полный день"
+      },
+      "working_days": [],
+      "working_time_intervals": [],
+      "working_time_modes": [],
+      "accept_temporary": false,
+      "fly_in_fly_out_duration": [],
+      "work_format": [
+        {
+          "id": "ON_SITE",
+          "name": "На месте работодателя"
+        },
+        {
+          "id": "HYBRID",
+          "name": "Гибрид"
+        }
+      ],
+      "working_hours": [
+        {
+          "id": "HOURS_8",
+          "name": "8 часов"
+        }
+      ],
+      "work_schedule_by_days": [
+        {
+          "id": "FIVE_ON_TWO_OFF",
+          "name": "5/2"
+        }
+      ],
+      "night_shifts": false,
+      "professional_roles": [
+        {
+          "id": "73",
+          "name": "Менеджер продукта"
+        }
+      ],
+      "accept_incomplete_resumes": false,
+      "experience": {
+        "id": "moreThan6",
+        "name": "Более 6 лет"
+      },
+      "employment": {
+        "id": "full",
+        "name": "Полная занятость"
+      },
+      "employment_form": {
+        "id": "FULL",
+        "name": "Полная"
+      },
+      "internship": false,
+      "adv_response_url": null,
+      "is_adv_vacancy": false,
+      "adv_context": null
+    }
+  ],
+  "found": 672,
+  "pages": 135,
+  "page": 0,
+  "per_page": 5,
+  "clusters": null,
+  "arguments": null,
+  "fixes": null,
+  "suggests": null,
+  "alternate_url": "https://hh.ru/search/vacancy?area=1&enable_snippets=true&items_on_page=5&text=Data+Engineer"
+}
