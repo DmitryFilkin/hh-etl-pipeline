@@ -1,15 +1,16 @@
-import pandas as pd
 import os
 from datetime import datetime
 
-def  save_to_csv(dataframe, output_dir = "data"):
-    
-    "Сохраняет DataFrame в CSV файл "
+import pandas as pd
+
+
+def save_to_csv(dataframe, output_dir="data"):
+    "Сохраняет DataFrame в CSV файл"
 
     print("Модуль load запущен!")
-    
+
     # Создаём папку, если её нет
-    os.makedirs(output_dir, exist_ok = True)
+    os.makedirs(output_dir, exist_ok=True)
 
     # Создаём имя файла с датой и временем
     current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -18,25 +19,27 @@ def  save_to_csv(dataframe, output_dir = "data"):
 
     try:
         # Сохраняем DataFrame в CSV
-        dataframe.to_csv(filepath, index = False, encoding = 'utf-8')
+        dataframe.to_csv(filepath, index=False, encoding="utf-8")
         print(f"Данные сохранены в: {filepath}")
         return filepath
     except Exception as e:
         print(f"Ошибка при сохранении: {e}")
         return None
 
+
 # Тестовый запуск
 if __name__ == "__main__":
     # Создаём тестовый DataFrame
-    test_data = pd.DataFrame({
-        'name': ['Data Engineer', 'ML Engineer'],
-        'company': ['Yandex', 'VK'],
-        'salary': [150000, 180000]
-    })
+    test_data = pd.DataFrame(
+        {
+            "name": ["Data Engineer", "ML Engineer"],
+            "company": ["Yandex", "VK"],
+            "salary": [150000, 180000],
+        }
+    )
 
     result_path = save_to_csv(test_data)
     if result_path:
         print(f"Тест пройден! Файл: {result_path}")
     else:
         print("Тест не пройден")
-    

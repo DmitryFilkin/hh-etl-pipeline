@@ -1,20 +1,23 @@
-import pandas as pd
 import json
 import re
+
+import pandas as pd
+
 
 def clean_text(text):
     "Очищает текст от HTML-тегов"
     if text is None:
         return ""
-    return re.sub('<[^<]+?>', '', text)
-    
+    return re.sub("<[^<]+?>", "", text)
+
+
 def calculate_salary(salary_data):
     "Рассчитывает среднюю зарплату"
     if not salary_data:
         return None
-    
-    from_salary = salary_data.get('from')
-    to_salary = salary_data.get('to')
+
+    from_salary = salary_data.get("from")
+    to_salary = salary_data.get("to")
 
     # Считаем среднее если есть оба значения
     if from_salary and to_salary:
@@ -26,6 +29,7 @@ def calculate_salary(salary_data):
     else:
         return None
 
+
 def clean_vacancy_data(raw_data):
     """
     Очищает и преобразует сырые данные о вакансиях
@@ -34,15 +38,15 @@ def clean_vacancy_data(raw_data):
 
     cleaned_data = []
 
-    for vacancy in raw_data['items']:
+    for vacancy in raw_data["items"]:
         cleaned_vacancy = {
-            'id': vacancy['id'],
-            'name': vacancy['name'],
-            'company': vacancy['employer']['name'],
-            'city': vacancy['area']['name'],
-            'salary': calculate_salary(vacancy.get('salary')),
-            'skills': clean_text(vacancy['snippet']['requirement']),
-            'url': vacancy['alternate_url']
+            "id": vacancy["id"],
+            "name": vacancy["name"],
+            "company": vacancy["employer"]["name"],
+            "city": vacancy["area"]["name"],
+            "salary": calculate_salary(vacancy.get("salary")),
+            "skills": clean_text(vacancy["snippet"]["requirement"]),
+            "url": vacancy["alternate_url"],
         }
         cleaned_data.append(cleaned_vacancy)
 
@@ -52,11 +56,12 @@ def clean_vacancy_data(raw_data):
 
     return df
 
+
 # Тестовый запуск
 if __name__ == "__main__":
     # Загружаем сырые данные
     try:
-        with open('data/raw_vacancies.json','r', encoding = 'utf-8') as f:
+        with open("data/raw_vacancies.json", "r", encoding="utf-8") as f:
             raw_data = json.load(f)
         print("Файл с данными загружен")
     except Exception as e:
@@ -68,4 +73,4 @@ if __name__ == "__main__":
 
         # Показываем результат
         print("\n Первые 3 вакансии:")
-        print(result_df[['name', 'company', 'salary', 'city']].head(3))
+        print(result_df[["name", "company", "salary", "city"]].head(3))
