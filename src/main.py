@@ -7,6 +7,7 @@ from transform import clean_vacancy_data
 
 def run_etl_pipeline():
     "Запускает полный ETL-пайплаин"
+
     print("=" * 50)
     print("Запуск ETL-пайплаина")
     print("=" * 50)
@@ -47,7 +48,8 @@ def run_etl_pipeline():
     if not result_path:
         print("Не удалось сохранить данные")
         return False
-    # Статис
+
+    # Статистика
     print("\n Статистика:")
     print(f"• Обработано вакансий: {len(cleaned_data)}")
     print(f"• Вакансий с зарплатой: {cleaned_data['salary'].notna().sum()}")

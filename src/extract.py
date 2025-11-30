@@ -37,7 +37,7 @@ if __name__ == "__main__":
         print(f"Навыки (требования): {first_vacancy['snippet']['requirement']}")
         print(f"Обязанности: {first_vacancy['snippet']['responsibility']}")
 
-        # Сохраняем сырые данные для следующего шага
+        # Сохраняем необработанные данные для следующего шага
         with open("data/raw_vacancies.json", "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
-        print("\n Сырые данные сохранены в data/raw_vacancies.json")
+        print("\n Необработанные данные сохранены в data/raw_vacancies.json")

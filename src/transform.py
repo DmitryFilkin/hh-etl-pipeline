@@ -6,6 +6,7 @@ import pandas as pd
 
 def clean_text(text):
     "Очищает текст от HTML-тегов"
+
     if text is None:
         return ""
     return re.sub("<[^<]+?>", "", text)
@@ -13,6 +14,7 @@ def clean_text(text):
 
 def calculate_salary(salary_data):
     "Рассчитывает среднюю зарплату"
+
     if not salary_data:
         return None
 
@@ -31,9 +33,8 @@ def calculate_salary(salary_data):
 
 
 def clean_vacancy_data(raw_data):
-    """
-    Очищает и преобразует сырые данные о вакансиях
-    """
+    "Очищает и преобразует необработанные данные о вакансиях"
+
     print("Обрабатываем все вакансии...")
 
     cleaned_data = []
@@ -59,7 +60,7 @@ def clean_vacancy_data(raw_data):
 
 # Тестовый запуск
 if __name__ == "__main__":
-    # Загружаем сырые данные
+    # Загружаем необработанные данные
     try:
         with open("data/raw_vacancies.json", "r", encoding="utf-8") as f:
             raw_data = json.load(f)
