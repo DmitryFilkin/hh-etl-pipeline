@@ -40,6 +40,14 @@ def clean_vacancy_data(raw_data):
     cleaned_data = []
 
     for vacancy in raw_data["items"]:
+        # Отбираем только Data Engineer вакансии
+        name_lower = vacancy["name"].lower()
+        de_keywords = ["data engineer", "инженер данных"]
+
+        # Если название не содержит ключевых слов Data Engineer - пропускаем
+        if not any(keyword in name_lower for keyword in de_keywords):
+            continue
+
         cleaned_vacancy = {
             "id": vacancy["id"],
             "name": vacancy["name"],
@@ -53,7 +61,7 @@ def clean_vacancy_data(raw_data):
 
     # Создаём DataFrame
     df = pd.DataFrame(cleaned_data)
-    print(f"Создан Data Frame с {len(df)} вакансиями")
+    print(f"Создан DataFrame с {len(df)} вакансиями")
 
     return df
 
