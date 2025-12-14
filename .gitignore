@@ -212,7 +212,7 @@ __marimo__/
 # Project data (we save only raw data)
 data/*.csv
 data/*.json
-!data/raw_vacancies.json
+!data/.gitkeep
 
 # Logs and temporary files
 *.log
