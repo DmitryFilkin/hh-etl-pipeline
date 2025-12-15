@@ -38,8 +38,8 @@ dir data/
 ## Запуск в Docker
 ### 1. Сборка образа 
 docker build -t hh-etl .
-### 2. Запуск с переменными окружения и сохранением данных
-docker run --rm --env-file docker.env -v ${PWD}/docker-data:/app/data hh-etl
+### 2. Запуск с сохранением результатов в папку docker-data
+docker run --rm -v ${PWD}/docker-data:/app/data hh-etl
 ### 3. Проверка результатов
 dir docker-data/
 

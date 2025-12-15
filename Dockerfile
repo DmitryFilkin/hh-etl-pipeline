@@ -10,8 +10,8 @@ COPY requirements.txt .
 # Устанавливаем  зависимости
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Копируем исходный код
-COPY src/ ./src/
+# Копируем весь проект
+COPY . .
 
 # Команда запуска по умолчанию 
-CMD ["python", "src/main.py"]
+CMD ["python", "main.py"]
