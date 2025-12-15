@@ -166,6 +166,10 @@ data/*.csv
 data/*.json
 !data/.gitkeep
 
+# Docker data
+docker-data/*
+!docker-data/.gitkeep
+
 # Logs and temporary files
 *.log
 *.tmp
