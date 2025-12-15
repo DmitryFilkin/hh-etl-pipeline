@@ -1,0 +1,13 @@
+# Конфигурация ETL-пайплаина
+
+# Конфигурация поиска вакансий
+SEARCH_QUERY: "Data Engineer"
+AREA_ID: 1
+PER_PAGE: 10
+
+# Настройки API
+HH_API_URL: "https://api.hh.ru/vacancies"
+
+# Настройки приложения
+OUTPUT_DIR: "data"
+LOG_LEVEL: "INFO"

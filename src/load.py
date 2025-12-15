@@ -2,12 +2,25 @@ import os
 from datetime import datetime
 
 import pandas as pd
+import yaml
 
 
-def save_to_csv(dataframe, output_dir="data"):
+def load_config():
+    "Загружает конфигурацию из config.yaml"
+    try:
+        with open("config.yaml", "r", encoding="utf-8") as f:
+            return yaml.safe_load(f)
+    except FileNotFoundError:
+        return {"OUTPUT_DIR": "data"}
+
+
+def save_to_csv(dataframe, output_dir=None):
     "Сохраняет DataFrame в CSV файл"
 
     print("Модуль load запущен!")
+
+    config = load_config()
+    output_dir = output_dir or config.get("OUTPUT_DIR", "data")
 
     # Создаём папку, если её нет
     os.makedirs(output_dir, exist_ok=True)

@@ -1,8 +1,30 @@
 import os
+import sys
 
-from extract import get_hh_vacancies
-from load import save_to_csv
-from transform import clean_vacancy_data
+import yaml
+
+# Добавляем папку src в путь для импортов
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
+
+# Импорты из src с отключением проверки E402
+from src.extract import get_hh_vacancies  # noqa: E402
+from src.load import save_to_csv  # noqa: E402
+from src.transform import clean_vacancy_data  # noqa: E402
+
+
+def load_config():
+    "Загружает конфигурацию из config.yaml"
+    try:
+        with open("config.yaml", "r", encoding="utf-8") as f:
+            return yaml.safe_load(f)
+    except FileNotFoundError:
+        # Возвращаем значения по умолчанию если файл не найден
+        return {
+            "SEARCH_QUERY": "Data Engineer",
+            "AREA_ID": 1,
+            "PER_PAGE": 10,
+            "OUTPUT_DIR": "data",
+        }
 
 
 def run_etl_pipeline():
@@ -12,19 +34,19 @@ def run_etl_pipeline():
     print("Запуск ETL-пайплаина")
     print("=" * 50)
 
-    # Читаем настройки из переменных окружения
-    search_query = os.getenv("SEARCH_QUERY", "Data Engineer")
-    area_id = int(os.getenv("AREA_ID", "1"))
-    per_page = int(os.getenv("PER_PAGE", "10"))
+    # Загружаем конфигурацию
+    config = load_config()
 
     print(
-        f"Настройки: поиск = '{search_query}', "
-        f"регион = {area_id}, вакансий = {per_page}"
+        f"Настройки: поиск = '{config['SEARCH_QUERY']}', "
+        f"регион = {config['AREA_ID']}, вакансий = {config['PER_PAGE']}"
     )
     # 1. Extract
     print("\n Этап 1: Получение данных из HH API...")
     raw_data = get_hh_vacancies(
-        search_text=search_query, area=area_id, per_page=per_page
+        search_text=config["SEARCH_QUERY"],
+        area=config["AREA_ID"],
+        per_page=config["PER_PAGE"],
     )
 
     if not raw_data:
@@ -44,7 +66,7 @@ def run_etl_pipeline():
 
     # 3. Load
     print("\n Этап 3: Сохранение результатов...")
-    result_path = save_to_csv(cleaned_data)
+    result_path = save_to_csv(cleaned_data, output_dir=config["OUTPUT_DIR"])
     if not result_path:
         print("Не удалось сохранить данные")
         return False

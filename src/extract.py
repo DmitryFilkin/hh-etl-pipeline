@@ -1,17 +1,33 @@
 import json
-import os
-
 import requests
+import yaml
+
+
+def load_config():
+    "Загружает конфигурацию из config.yaml"
+    try:
+        with open("config.yaml", "r", encoding="utf-8") as f:
+            return yaml.safe_load(f)
+    except FileNotFoundError:
+        # Возвращаем значения по умолчанию если файл не найден
+        return {
+            "SEARCH_QUERY": "Data Engineer",
+            "AREA_ID": 1,
+            "PER_PAGE": 10,
+            "HH_API_URL": "https://api.hh.ru/vacancies",
+        }
 
 
 def get_hh_vacancies(search_text=None, area=None, per_page=None):
     "Получает вакансии с HH API"
 
-    search_text = search_text or os.getenv("SEARCH_QUERY", "Data Engineer")
-    area = area or int(os.getenv("AREA_ID", "1"))
-    per_page = per_page or int(os.getenv("PER_PAGE", "10"))
+    config = load_config()
 
-    url = "https://api.hh.ru/vacancies"
+    search_text = search_text or config["SEARCH_QUERY"]
+    area = area or config["AREA_ID"]
+    per_page = per_page or config["PER_PAGE"]
+
+    url = config["HH_API_URL"]
     params = {"text": search_text, "area": area, "per_page": per_page}
     try:
         response = requests.get(url, params=params)
